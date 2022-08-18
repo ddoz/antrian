@@ -1,0 +1,41 @@
+html, body {
+    background-color: #3a3939;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#box-number {
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 15rem;
+    min-width: 300px;
+    height: 300px;
+}
+
+#box-button {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#btn-prev, #btn-play, #btn-next {
+    border: none;
+    min-height: 40px;
+    font-size: 4rem;
+}
+
+#btn-reset {
+    border: none;
+}
+
+#latest-call {
+    color: #fff;
+}
