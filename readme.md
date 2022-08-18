@@ -12,6 +12,10 @@
 - Memanggil Nomor antrian (Bahasa Indonesia)
 - Menggunakan LocalStorage Browser
 
+## Sound Source
+
+- https://soundoftext.com/
+
 ## Instalasi
 
 ```sh

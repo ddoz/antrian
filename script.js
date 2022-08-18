@@ -65,6 +65,8 @@ const startUp = () => {
     textLastNumber.innerHTML = lastNumber;
     if(!lastNumber) {
         localStorage.setItem("last-number", defaultNumber);
+        textNumber.innerHTML = defaultNumber;
+        textLastNumber.innerHTML = defaultNumber;
     }
 }
 
@@ -109,7 +111,5 @@ btnPrev.addEventListener("click", () => {
 btnReset.addEventListener("click", ()=>{
     reset();
 })
-
-
 
 startUp();
