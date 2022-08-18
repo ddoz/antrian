@@ -61,12 +61,13 @@ const playNomorAntrian = (number) => {
 
 const startUp = () => {
     var lastNumber = localStorage.getItem("last-number");
-    textNumber.innerHTML = lastNumber;
-    textLastNumber.innerHTML = lastNumber;
     if(!lastNumber) {
         localStorage.setItem("last-number", defaultNumber);
         textNumber.innerHTML = defaultNumber;
         textLastNumber.innerHTML = defaultNumber;
+    }else {
+        textNumber.innerHTML = lastNumber;
+        textLastNumber.innerHTML = lastNumber;
     }
 }
 
