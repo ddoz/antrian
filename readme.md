@@ -25,13 +25,12 @@
 Buka aja pakai chrome > index.html
 ``
 
-## License
-
-MIT
-
-
 ## Demo
 https://senja.abjad.id
 
 ## Demo dengan server
 https://senja.abjad.id/index-server.html
+
+## License
+
+MIT
