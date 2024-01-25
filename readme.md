@@ -6,11 +6,14 @@
 - CSS
 - JavaScript
 - LocalStorage
+- PHP
+- MySQL
 
 ## Fitur
 
 - Memanggil Nomor antrian (Bahasa Indonesia)
 - Menggunakan LocalStorage Browser
+- Fitur baru terkoneksi dengan database (mysql)
 
 ## Sound Source
 
@@ -18,7 +21,7 @@
 
 ## Instalasi
 
-```sh
+```
 Buka aja pakai chrome > index.html
 ```
 
@@ -29,3 +32,6 @@ MIT
 
 ## Demo
 https://senja.abjad.id
+
+## Demo dengan server
+https://senja.abjad.id/index-server.html
