@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrian Web With Server | DDOZ</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="prepare">
+        <div class="form" id="formPrepare">
+            <label for="">Masukkan Jumlah Loket</label>
+            <input type="text" id="jumlahLoket" placeholder="Jumlah Loket">
+            <button onclick="enterSession()">MULAI SESI</button>
+            <small id="msgPrepare" style="display: none;">Sedang Proses, Tunggu yah...</small>
+        </div>
+    </div>
+
+    <button id="resetSesi" style="display: none;" onclick="resetSession()">RESET SESI</button>
+    <div id="content">
+        <div id="namaSesi"></div>
+        <div id="contentLoket"></div>
+        <div id="lastNumber"></div>
+    </div>
+    
+
+    <script src="script-server.js"></script>
+</body>
+</html>
