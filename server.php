@@ -37,13 +37,12 @@ if($state == 'NEXT_NUMBER') {
     $loketNo = $_POST['loket'];
     $namaSesi = $_POST['namaSesi'];
     //UPDATE ANTRIAN LOKET DAN LAST ANTRIAN
-    $lastNumber = $mysqli -> query("SELECT nomor_terakhir FROM sesi_antrian WHERE nama_sesi = '$namaSesi'");
+    $lastNumber = $mysqli -> query("SELECT antrian_nomor FROM sesi_loket WHERE nama_sesi = '$namaSesi' AND nomor_loket='$loketNo'");
     $output = array(
         'loket' => $loketNo
     );
     while ($row = $lastNumber -> fetch_row()) {
         $next = (int)$row[0] + 1;
-        $mysqli -> query("UPDATE sesi_antrian SET nomor_terakhir = '$next' WHERE nama_sesi = '$namaSesi'");
         $mysqli -> query("UPDATE sesi_loket SET antrian_nomor = '$next' WHERE nama_sesi = '$namaSesi' AND nomor_loket = '$loketNo'");
         $output['next'] = $next;
     }

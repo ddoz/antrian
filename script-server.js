@@ -83,6 +83,7 @@ const buildContent = () => {
     for (let index = 1; index <= jumlahLoket; index++) {
 
         var baseUrl = window.location.origin;
+        // baseUrl = 'http://127.0.0.1';
         const url = baseUrl + "/server.php";
         var formData = new FormData();
         formData.append('state', 'LOKET_ANTRIAN');
@@ -117,6 +118,7 @@ const buildContent = () => {
 function next(loket) {
     var namaSesi = localStorage.getItem('NAMA_SESI')
     var baseUrl = window.location.origin;
+    // baseUrl = 'http://127.0.0.1';
     const url = baseUrl + "/server.php";
     var formData = new FormData();
     formData.append('state', 'NEXT_NUMBER');
@@ -152,6 +154,7 @@ function resetSession() {
 
 function enterSession() {
     var baseUrl = window.location.origin;
+    // baseUrl = 'http://127.0.0.1';
     const url = baseUrl + "/server.php";
     var formData = new FormData();
     formData.append('state', 'CREATE_SESSION');
