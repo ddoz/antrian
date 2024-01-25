@@ -21,9 +21,9 @@
 
 ## Instalasi
 
-```
+``
 Buka aja pakai chrome > index.html
-```
+``
 
 ## License
 
