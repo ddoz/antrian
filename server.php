@@ -7,15 +7,6 @@ if ($mysqli -> connect_errno) {
   exit();
 }
 
-$sql = "SELECT Lastname, Age FROM Persons ORDER BY Lastname";
-
-if ($result = $mysqli -> query($sql)) {
-  while ($row = $result -> fetch_row()) {
-    printf ("%s (%s)\n", $row[0], $row[1]);
-  }
-  $result -> free_result();
-}
-
 $state = $_POST['state'];
 
 // CREATE SESSION
